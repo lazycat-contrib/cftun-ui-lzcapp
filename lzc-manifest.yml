@@ -51,8 +51,8 @@ application:
 
 services:
   cftun-ui:
-    # upstream: docker.io/uxiaohan/cftun-ui:latest (digest-pinned by action)
-    image: docker.1ms.run/uxiaohan/cftun-ui:latest
+    # upstream: docker.io/uxiaohan/cftun-ui:2026.09.20_17.19
+    image: docker.1ms.run/uxiaohan/cftun-ui:2026.09.20_17.19
     # 需要管理本机 cloudflared 进程与访问局域网服务，走宿主网络
     network_mode: host
     environment:

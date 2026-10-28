@@ -13,7 +13,6 @@ update:
   version_source:
     type: image
     image: cftun-ui
-    bump: patch
 
 build:
   toolchains: []
@@ -24,9 +23,13 @@ images:
     target: service
     service: cftun-ui
     source: docker.io/uxiaohan/cftun-ui
-    channel: custom
-    sort: created
-    tag_regex: '^latest$'
+    channel: date
+    sort: semver
+    tag_regex: "^[0-9]{4}\.[0-9]{2}\.[0-9]{2}_[0-9]{2}\.[0-9]{2}$"
+    version_regex: "^(?P<version>[0-9]{4})\.(?P<month>[0-9]{2})\.(?P<day>[0-9]{2})_[0-9]{2}\.[0-9]{2}$"
+    version_template: "{version}.{month}.{day}"
+    max_tags: 50000
+    max_matching_tags: 50000
     delivery:
       mode: mirror
       require_digest_match: true
