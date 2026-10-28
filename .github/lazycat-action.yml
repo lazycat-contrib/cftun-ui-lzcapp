@@ -13,6 +13,7 @@ update:
   version_source:
     type: image
     image: cftun-ui
+    bump: patch
 
 build:
   toolchains: []
@@ -26,7 +27,6 @@ images:
     channel: custom
     sort: created
     tag_regex: '^latest$'
-    bump: patch
     delivery:
       mode: mirror
       require_digest_match: true
