@@ -1,0 +1,20 @@
+package: community.lazycat.app.cftun-ui
+version: 1.0.0
+name: CFTun-UI
+description: Self-hosted Cloudflare Tunnel management console for ingress mapping and connector control
+min_os_version: "1.5.0"
+homepage: https://github.com/uxiaohan/CFTun-UI
+author: uxiaohan
+license: MIT
+permissions:
+  required:
+    - net.internet
+    - net.host
+    - compose.override
+locales:
+  zh:
+    name: CFTun-UI
+    description: Cloudflare Tunnel 自托管管理面板：服务映射、DNS 维护与 cloudflared 生命周期控制
+  en:
+    name: CFTun-UI
+    description: Self-hosted Cloudflare Tunnel management console for ingress mapping and connector control
