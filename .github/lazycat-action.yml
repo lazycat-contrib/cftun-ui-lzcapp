@@ -25,8 +25,8 @@ images:
     source: docker.io/uxiaohan/cftun-ui
     channel: date
     sort: semver
-    tag_regex: "^[0-9]{4}\.[0-9]{2}\.[0-9]{2}_[0-9]{2}\.[0-9]{2}$"
-    version_regex: "^(?P<version>[0-9]{4})\.(?P<month>[0-9]{2})\.(?P<day>[0-9]{2})_[0-9]{2}\.[0-9]{2}$"
+    tag_regex: ^[0-9]{4}\.[0-9]{2}\.[0-9]{2}_[0-9]{2}\.[0-9]{2}$
+    version_regex: ^(?P<version>[0-9]{4})\.(?P<month>[0-9]{2})\.(?P<day>[0-9]{2})_[0-9]{2}\.[0-9]{2}$
     version_template: "{version}.{month}.{day}"
     max_tags: 50000
     max_matching_tags: 50000
